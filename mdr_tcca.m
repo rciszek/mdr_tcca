@@ -1,11 +1,11 @@
-% mdr_tcca - A MATLAB implementation of multiview dimensionality reduction using 
+% mdr_tcca - MATLAB implementation of multi-view dimensionality reduction using 
 % Tensor Canonical Correlation Analysis, presented by Luo et al. in 
 % https://arxiv.org/pdf/1502.02330.pdf
 %
 % Syntax:  [reduction] = mdr_tcca(views,d,epsilon)
 %
 % Inputs:
-%    views - A cell array of NxM matrices
+%    views - Cell array of NxM matrices
 %    d - Final dimensionality
 %    epsilon - Regularization trade-off factor, non-negative.
 %    maxiters - Maximum number of ALS iterations in CP decomposition
@@ -13,7 +13,7 @@
 %                otherwise info is printed every n iterations.
 %
 % Outputs:
-%    reduction - Multiview dimensionality reduction
+%    reduction - Multi-view dimensionality reduction
 %    f - Factorization as ktensor
 %
 % Example: 
